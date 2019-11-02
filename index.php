@@ -1,3 +1,3 @@
 <?php 
-    header("Location: /static/index.html");
+    header("Location: /public/index.html");
 ?>
