@@ -1,6 +1,6 @@
-const webpack = require('webpack');
-const path = require('path');
-const { VueLoaderPlugin } = require('vue-loader');
+const webpack = require('webpack')
+const path = require('path')
+const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
   mode: 'development',
@@ -36,7 +36,7 @@ module.exports = {
               name: '[name].[ext]',
               outputPath: '../images/',
               publicPath: function(path) {
-                return './assets/images/' + path;
+                return './assets/images/' + path
               }
             }
           }
@@ -51,4 +51,4 @@ module.exports = {
     }),
     new VueLoaderPlugin()
   ]
-};
+}
