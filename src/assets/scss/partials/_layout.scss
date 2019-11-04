@@ -1,0 +1,27 @@
+.l-header {
+  height: 150px;
+  background-color: red;
+  .inner {
+    border: 1px solid #000;
+    height: 100%;
+  }
+}
+
+.l-contents {
+  height: 500px;
+  border: 1px solid #000;
+}
+
+.l-sidemenu {
+  height: 500px;
+  background-color: blue;
+}
+
+.l-footer {
+  height: 150px;
+  background-color: green;
+  .inner {
+    border: 1px solid #000;
+    height: 100%;
+  }
+}
