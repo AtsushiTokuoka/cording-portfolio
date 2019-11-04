@@ -11,5 +11,8 @@
   ],
   "[scss]": {
     "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.formatOnSave": true
   }
 }
