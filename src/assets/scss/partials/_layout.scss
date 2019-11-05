@@ -3,41 +3,35 @@
   .inner {
     padding-top: 14px;
     @include media-breakpoint-up(md) {
-      padding: 40px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0 20px;
     }
-    .header-logo {
-      width: 98px;
-      margin: 0 auto;
-      @include media-breakpoint-up(md) {
-        width: 140px;
-        margin: 0;
-        float: left;
+    .header-ttl {
+      @include font-size(25);
+      color: $black01;
+      font-weight: bold;
+      text-align: center;
+      a {
+        color: $black01;
+        text-decoration: none;
       }
-      img {
-        max-width: 100%;
+      @include media-breakpoint-up(md) {
+        @include font-size(30);
       }
     }
     .header-icon-sp {
-      margin: 12px auto;
-      display: table;
-      .sp-icon {
-        display: table-cell;
-        vertical-align: middle;
-        padding-right: 10px;
-        width: 24px;
-        img {
-          width: 100%;
-        }
-        &:last-child {
-          padding-right: 0;
-        }
-      }
+      margin: 0 auto 12px;
+      text-align: center;
+      @include font-size(20);
       @include media-breakpoint-up(md) {
         display: none;
       }
     }
     .header-sp-navi {
       display: none;
+      background-color: $black01;
       position: absolute;
       z-index: 100;
       width: 100%;
@@ -63,22 +57,15 @@
       display: none;
       @include media-breakpoint-up(md) {
         display: block;
-        float: right;
-        margin-top: 20px;
         .pc-navi-list {
           display: inline-block;
           margin-right: 20px;
+          @include font-size(20);
+          a {
+            color: $black01;
+          }
           &:last-child {
             margin-right: 0;
-          }
-          .fa_icon {
-            margin-right: 10px;
-          }
-          &.icon_wrap {
-            font-size: 0;
-            img {
-              width: 20px;
-            }
           }
         }
       }
