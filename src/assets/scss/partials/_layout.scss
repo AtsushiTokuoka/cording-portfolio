@@ -1,9 +1,75 @@
+// header layout
 .l-header {
-  height: 150px;
-  background-color: red;
   .inner {
-    border: 1px solid #000;
-    height: 100%;
+    padding-top: 14px;
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0 20px;
+    }
+    .header-ttl {
+      @include font-size(25);
+      color: $black01;
+      font-weight: bold;
+      text-align: center;
+      a {
+        color: $black01;
+        text-decoration: none;
+      }
+      @include media-breakpoint-up(md) {
+        @include font-size(30);
+      }
+    }
+    .header-icon-sp {
+      margin: 0 auto 12px;
+      text-align: center;
+      @include font-size(20);
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
+    }
+    .header-sp-navi {
+      display: none;
+      background-color: $black01;
+      position: absolute;
+      z-index: 100;
+      width: 100%;
+      top: 93px;
+      left: 0;
+      line-height: 2.6;
+      @include font-size(15);
+      .inner {
+        padding: 10px 15px;
+        .sp-navi-list {
+          .sp-navi-link {
+            color: #fff;
+            display: block;
+          }
+          border-bottom: 1px solid #fff;
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .header-pc-navi {
+      display: none;
+      @include media-breakpoint-up(md) {
+        display: block;
+        .pc-navi-list {
+          display: inline-block;
+          margin-right: 20px;
+          @include font-size(20);
+          a {
+            color: $black01;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
   }
 }
 
