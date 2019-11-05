@@ -3,7 +3,7 @@
   <section class="g-mb30-sp g-mb30-pc">
     <div class="m-disp-item g-mb26-sp g-mb20-pc">
       <div class="item-box" v-for="product in products">
-        <a href="#" class="inner">
+        <div class="inner">
           <img
             class="thumbnail"
             v-bind:src="require('../assets/images/product/' + product.image)"
@@ -11,7 +11,8 @@
           />
           <p class="product-name">{{product.name}}</p>
           <p class="price">金額：{{product.price}}</p>
-        </a>
+          <a href="#" class="m-btn color-type01">商品詳細へ</a>
+        </div>
       </div>
     </div>
   </section>
