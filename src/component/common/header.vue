@@ -5,10 +5,10 @@
         <a href="index.html">PORTFOLIO</a>
       </h1>
       <p class="header-icon-sp">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars" @click="menuOpen"></i>
       </p>
       <!--sp_icon_wrap-->
-      <nav class="header-sp-navi">
+      <nav class="header-sp-navi" v-show="isOpen">
         <ul class="inner">
           <li class="sp-navi-list">
             <a href="#" class="sp-navi-link">NAVI①</a>
@@ -44,3 +44,19 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  name: 'common-header',
+  data() {
+    return {
+      isOpen: false
+    }
+  },
+  methods: {
+    menuOpen(e) {
+      this.isOpen = !this.isOpen
+    }
+  }
+}
+</script>

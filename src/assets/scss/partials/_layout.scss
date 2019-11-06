@@ -30,7 +30,6 @@
       }
     }
     .header-sp-navi {
-      display: none;
       background-color: $black01;
       position: absolute;
       z-index: 100;
@@ -39,6 +38,9 @@
       left: 0;
       line-height: 2.6;
       @include font-size(15);
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
       .inner {
         padding: 10px 15px;
         .sp-navi-list {
