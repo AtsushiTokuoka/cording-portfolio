@@ -8,7 +8,7 @@
         <i class="fas fa-bars" @click="menuOpen"></i>
       </p>
       <!--sp_icon_wrap-->
-      <nav class="header-sp-navi" v-show="isOpen">
+      <nav class="header-sp-navi js-menuToggle">
         <ul class="inner">
           <li class="sp-navi-list">
             <a href="#" class="sp-navi-link">NAVI①</a>
@@ -49,13 +49,11 @@
 export default {
   name: 'common-header',
   data() {
-    return {
-      isOpen: false
-    }
+    return {}
   },
   methods: {
     menuOpen(e) {
-      this.isOpen = !this.isOpen
+      $('.js-menuToggle').slideToggle(200)
     }
   }
 }
