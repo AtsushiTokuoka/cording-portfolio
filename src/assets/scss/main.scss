@@ -37,8 +37,12 @@
 @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 @import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
 
-// utilities
-// @import 'partial/utilities';
+// button module
+@import '../../node_modules/bootstrap/scss/buttons';
+
+// variables・mixins
+@import 'partials/variables';
+@import 'partials/mixins';
 
 // reset.css読み込み & _reboot.scssを上書き
 @import 'partials/base';
