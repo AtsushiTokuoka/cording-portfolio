@@ -28,6 +28,12 @@
       @include media-breakpoint-up(md) {
         display: none;
       }
+      .icon {
+        @include font-awesome-solid($fa-var-bars);
+        &.close {
+          @include font-awesome-solid($fa-var-times);
+        }
+      }
     }
     .header-sp-navi {
       display: none;
@@ -39,6 +45,9 @@
       left: 0;
       line-height: 2.6;
       @include font-size(15);
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
       .inner {
         padding: 10px 15px;
         .sp-navi-list {
