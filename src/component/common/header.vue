@@ -5,7 +5,7 @@
         <a href="index.html">PORTFOLIO</a>
       </h1>
       <p class="header-icon-sp">
-        <i class="fas fa-bars" @click="menuOpen"></i>
+        <i class="icon" @click="menuOpen"></i>
       </p>
       <!--sp_icon_wrap-->
       <nav class="header-sp-navi js-menuToggle">
@@ -52,8 +52,9 @@ export default {
     return {}
   },
   methods: {
-    menuOpen(e) {
+    menuOpen: e => {
       $('.js-menuToggle').slideToggle(200)
+      $(e.target).toggleClass('close')
     }
   }
 }

@@ -1,0 +1,7 @@
+@mixin font-awesome-solid($icon) {
+  @extend %fa-icon;
+  @extend .fas;
+  &:before {
+    content: fa-content($icon);
+  }
+}

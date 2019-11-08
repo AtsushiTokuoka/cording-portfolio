@@ -28,6 +28,12 @@
       @include media-breakpoint-up(md) {
         display: none;
       }
+      .icon {
+        @include font-awesome-solid($fa-var-bars);
+        &.close {
+          @include font-awesome-solid($fa-var-times);
+        }
+      }
     }
     .header-sp-navi {
       display: none;
