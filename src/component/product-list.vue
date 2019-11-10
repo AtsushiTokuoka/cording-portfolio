@@ -11,7 +11,7 @@
           />
           <p class="product-name">{{product.name}}</p>
           <p class="price">金額：{{product.price}}</p>
-          <a href="#" class="m-btn color-type01">商品詳細へ</a>
+          <a href="detail.html" class="m-btn color-type01">商品詳細へ</a>
         </div>
       </div>
     </div>
