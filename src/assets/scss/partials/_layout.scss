@@ -85,6 +85,13 @@
 .l-contents {
 }
 
+//商品詳細ページ　SP表示では背景幅100%で表示
+.l-product-area {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .l-sidemenu {
   .info {
     margin-bottom: 20px;
