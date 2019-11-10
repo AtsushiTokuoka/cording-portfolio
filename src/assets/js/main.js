@@ -4,6 +4,10 @@ import ProductDetail from '../../component/product-detail.vue'
 import Sidemenu from '../../component/common/sidemenu.vue'
 import Footer from '../../component/common/footer.vue'
 
+Vue.filter('price_format', function(val) {
+  return val.toLocaleString()
+})
+
 const app = new Vue({
   el: '#app',
   components: {
