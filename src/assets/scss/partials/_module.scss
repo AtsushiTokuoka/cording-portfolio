@@ -13,6 +13,9 @@
       background-color: darken($blue01, 5%);
     }
   }
+  &.bold {
+    font-weight: bold;
+  }
 }
 
 //商品リスト表示
@@ -23,23 +26,24 @@
   .item-box {
     background-color: $white01;
     padding: 8px;
-    width: 49.5%;
-    margin: 0 1% 1% 0;
+    width: 49%;
+    margin: 0 2% 2% 0;
+    border-radius: 5px;
     &:nth-child(2n) {
       margin-right: 0;
     }
     @include media-breakpoint-up(md) {
-      width: 33%;
-      margin: 0 0.5% 0.5% 0;
+      width: 32%;
+      margin: 0 2% 2% 0;
       &:nth-child(2n) {
-        margin-right: 0.5%;
+        margin-right: 2%;
       }
       &:nth-child(3n) {
         margin-right: 0;
       }
     }
     .inner {
-      @include font-size(11);
+      @include font-size(14);
       line-height: 1.2;
     }
     .thumbnail {
@@ -47,10 +51,128 @@
       margin-bottom: 5px;
     }
     .product-name {
-      margin-bottom: 5px;
+      font-weight: bold;
     }
     .price {
-      margin-bottom: 10px;
+      font-weight: bold;
+      margin-bottom: 20px;
     }
+  }
+}
+
+/*_________________________
+ 商品詳細ページ内　モジュール
+ ________________________*/
+
+// title
+.m-pd-title {
+  .name {
+    @include font-size(25);
+    font-weight: bold;
+  }
+}
+
+// slide
+.m-pd-slide {
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-img {
+    margin-bottom: 9px;
+    @include media-breakpoint-up(md) {
+      width: 70%;
+    }
+  }
+  .sub-img {
+    @include media-breakpoint-up(md) {
+      width: 28%;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -5px;
+    .thumbnail {
+      width: 18.6%;
+      margin-bottom: 5px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+      @include media-breakpoint-up(md) {
+        width: 48%;
+      }
+    }
+  }
+}
+
+//table(color・size選択や、商品説明で使用)
+
+// price,quantity,cart
+.m-order {
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $black01;
+  }
+  .order-detail {
+    margin-bottom: 15px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      width: 50%;
+    }
+  }
+  .order-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid $black01;
+    padding: 12px 0;
+    &:last-of-type {
+      border-bottom: 1px solid $black01;
+      @include media-breakpoint-up(md) {
+        border-bottom: none;
+      }
+    }
+    .title {
+      color: $blue01;
+      font-weight: bold;
+    }
+    .body {
+      @include font-size(12);
+      .amount {
+        @include font-size(22);
+        font-weight: bold;
+        line-height: 1;
+      }
+      .quantity {
+        width: 100px;
+        margin: 0;
+        border: 1px solid $black01;
+      }
+    }
+  }
+  .cart-btn {
+    text-align: center;
+    cursor: pointer;
+    input[type='image'] {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.m-description {
+  .title {
+    @include font-size(20);
+    font-weight: bold;
+    border-bottom: 1px solid $black01;
+    padding-bottom: 17px;
+    margin-bottom: 18px;
+  }
+  .body {
+    @include font-size(14);
+    line-height: 1.4;
   }
 }

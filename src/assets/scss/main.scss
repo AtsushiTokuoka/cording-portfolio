@@ -40,8 +40,9 @@
 // button module
 @import '../../node_modules/bootstrap/scss/buttons';
 
-// variables
+// variables・mixins
 @import 'partials/variables';
+@import 'partials/mixins';
 
 // reset.css読み込み & _reboot.scssを上書き
 @import 'partials/base';
