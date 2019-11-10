@@ -10,8 +10,8 @@
             alt
           />
           <p class="product-name">{{product.name}}</p>
-          <p class="price">金額：{{product.price}}</p>
-          <a href="#" class="m-btn color-type01">商品詳細へ</a>
+          <p class="price">￥{{product.price | price_format}}</p>
+          <a href="detail.html" class="m-btn color-type01">商品詳細へ</a>
         </div>
       </div>
     </div>
