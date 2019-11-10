@@ -52,6 +52,7 @@ export default {
           newList.sort(function(a, b) {
             return a.price - b.price
           })
+          break
         case 3: // 価格が高い順
           newList.sort(function(a, b) {
             return b.price - a.price
