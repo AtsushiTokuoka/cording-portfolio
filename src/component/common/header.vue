@@ -9,7 +9,7 @@
       </p>
       <!--sp_icon_wrap-->
       <nav class="header-sp-navi js-menuToggle">
-        <ul class="inner">
+        <ul class="wrap">
           <li class="sp-navi-list">
             <a href="#" class="sp-navi-link">NAVI①</a>
           </li>
