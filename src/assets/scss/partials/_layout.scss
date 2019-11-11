@@ -1,20 +1,21 @@
 // header layout
 .l-header {
+  position: fixed;
+  width: 100%;
+  background-color: $black01;
+  z-index: 100;
   .inner {
-    padding-top: 14px;
-    @include media-breakpoint-up(md) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 40px 0 20px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     .header-ttl {
       @include font-size(25);
-      color: $black01;
       font-weight: bold;
-      text-align: center;
       a {
-        color: $black01;
+        color: $white01;
         text-decoration: none;
       }
       @include media-breakpoint-up(md) {
@@ -22,13 +23,12 @@
       }
     }
     .header-icon-sp {
-      margin: 0 auto 12px;
-      text-align: center;
       @include font-size(20);
       @include media-breakpoint-up(md) {
         display: none;
       }
       .icon {
+        color: $white01;
         @include font-awesome-solid($fa-var-bars);
         &.close {
           @include font-awesome-solid($fa-var-times);
@@ -41,14 +41,14 @@
       position: absolute;
       z-index: 100;
       width: 100%;
-      top: 93px;
+      top: 56px;
       left: 0;
       line-height: 2.6;
       @include font-size(15);
       @include media-breakpoint-up(md) {
         display: none;
       }
-      .inner {
+      .wrap {
         padding: 10px 15px;
         .sp-navi-list {
           .sp-navi-link {
@@ -71,7 +71,7 @@
           margin-right: 20px;
           @include font-size(20);
           a {
-            color: $black01;
+            color: $white01;
           }
           &:last-child {
             margin-right: 0;
@@ -82,7 +82,18 @@
   }
 }
 
+.l-wrapper {
+  padding-top: 100px;
+}
+
 .l-contents {
+}
+
+//商品詳細ページ　SP表示では背景幅100%で表示
+.l-product-area {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .l-sidemenu {
