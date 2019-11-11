@@ -1,20 +1,21 @@
 // header layout
 .l-header {
+  position: fixed;
+  width: 100%;
+  background-color: $black01;
+  z-index: 100;
   .inner {
-    padding-top: 14px;
-    @include media-breakpoint-up(md) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 40px 15px 20px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     .header-ttl {
       @include font-size(25);
-      color: $black01;
       font-weight: bold;
-      text-align: center;
       a {
-        color: $black01;
+        color: $white01;
         text-decoration: none;
       }
       @include media-breakpoint-up(md) {
@@ -22,13 +23,12 @@
       }
     }
     .header-icon-sp {
-      margin: 0 auto 12px;
-      text-align: center;
       @include font-size(20);
       @include media-breakpoint-up(md) {
         display: none;
       }
       .icon {
+        color: $white01;
         @include font-awesome-solid($fa-var-bars);
         &.close {
           @include font-awesome-solid($fa-var-times);
@@ -41,14 +41,14 @@
       position: absolute;
       z-index: 100;
       width: 100%;
-      top: 93px;
+      top: 56px;
       left: 0;
       line-height: 2.6;
       @include font-size(15);
       @include media-breakpoint-up(md) {
         display: none;
       }
-      .inner {
+      .wrap {
         padding: 10px 15px;
         .sp-navi-list {
           .sp-navi-link {
@@ -71,7 +71,7 @@
           margin-right: 20px;
           @include font-size(20);
           a {
-            color: $black01;
+            color: $white01;
           }
           &:last-child {
             margin-right: 0;
@@ -80,6 +80,10 @@
       }
     }
   }
+}
+
+.l-wrapper {
+  padding-top: 100px;
 }
 
 .l-contents {
@@ -108,21 +112,8 @@
 
 //footer
 .l-footer {
+  background-color: #4a4a4a;
   .inner {
-    .pagetop {
-      padding: 23px 0;
-      text-align: center;
-      @include media-breakpoint-up(md) {
-        text-align: right;
-        padding: 60px 0 20px;
-      }
-      img {
-        width: 92px;
-        @include media-breakpoint-up(md) {
-          width: 78px;
-        }
-      }
-    }
     .footer-list-wrap {
       border-top: 1px solid $black01;
       padding: 20px 0 15px;
@@ -140,12 +131,16 @@
             padding: 0 18px;
           }
         }
+        a {
+          color: $white01;
+        }
       }
     }
     .copyright {
+      padding-bottom: 20px;
       text-align: center;
       display: block;
-      margin-bottom: 90px;
+      color: #fff;
     }
   }
 }
