@@ -1,9 +1,9 @@
 <template>
   <!--ITEMS-->
   <section>
-    <div class="m-sortbox">
-      <label for="sort">並び替え：</label>
-      <select id="sort" v-model.number="sortOrder">
+    <div class="m-sortbox mb-3 text-right">
+      <label for="sort" class="ttl">並び替え：</label>
+      <select id="sort" v-model.number="sortOrder" class="select-menu">
         <option value="1">標準（名前順）</option>
         <option value="2">価格が安い順</option>
         <option value="3">価格が高い順</option>
