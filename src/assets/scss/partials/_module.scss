@@ -18,6 +18,17 @@
   }
 }
 
+// sort用のselectメニュー  商品一覧で使用
+.m-sortbox {
+  .ttl {
+    font-weight: bold;
+  }
+  .select-menu {
+    border: 1px solid $black01;
+    border-radius: 3px;
+  }
+}
+
 //商品リスト表示
 .m-disp-item {
   display: flex;
