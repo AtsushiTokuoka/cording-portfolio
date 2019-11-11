@@ -112,21 +112,8 @@
 
 //footer
 .l-footer {
+  background-color: #4a4a4a;
   .inner {
-    .pagetop {
-      padding: 23px 0;
-      text-align: center;
-      @include media-breakpoint-up(md) {
-        text-align: right;
-        padding: 60px 0 20px;
-      }
-      img {
-        width: 92px;
-        @include media-breakpoint-up(md) {
-          width: 78px;
-        }
-      }
-    }
     .footer-list-wrap {
       border-top: 1px solid $black01;
       padding: 20px 0 15px;
@@ -144,12 +131,16 @@
             padding: 0 18px;
           }
         }
+        a {
+          color: $white01;
+        }
       }
     }
     .copyright {
+      padding-bottom: 20px;
       text-align: center;
       display: block;
-      margin-bottom: 90px;
+      color: #fff;
     }
   }
 }
