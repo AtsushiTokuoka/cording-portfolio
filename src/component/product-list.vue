@@ -19,7 +19,7 @@
           />
           <p class="product-name">{{product.name}}</p>
           <p class="price">￥{{product.price | price_format}}</p>
-          <a href="detail.html" class="m-btn color-type01">商品詳細へ</a>
+          <a v-bind:href="'detail.html?id=' + product.id" class="m-btn color-type01">商品詳細へ</a>
         </div>
       </div>
     </div>
@@ -67,18 +67,18 @@ export default {
       sortOrder: 1,
       // 商品リスト
       products: [
-        { name: '商品タイトル②', price: 1200, image: 'item_02.jpg' },
-        { name: '商品タイトル①', price: 1580, image: 'item_01.jpg' },
-        { name: '商品タイトル③', price: 600, image: 'item_03.jpg' },
-        { name: '商品タイトル④', price: 400, image: 'item_04.jpg' },
-        { name: '商品タイトル⑥', price: 1000, image: 'item_06.jpg' },
-        { name: '商品タイトル⑤', price: 1100, image: 'item_05.jpg' },
-        { name: '商品タイトル⑦', price: 900, image: 'item_07.jpg' },
-        { name: '商品タイトル⑨', price: 850, image: 'item_09.jpg' },
-        { name: '商品タイトル⑧', price: 980, image: 'item_08.jpg' },
-        { name: '商品タイトル⑪', price: 750, image: 'item_11.jpg' },
-        { name: '商品タイトル⑩', price: 700, image: 'item_10.jpg' },
-        { name: '商品タイトル⑫', price: 800, image: 'item_12.jpg' }
+        { id: 2, name: '商品タイトル②', price: 1200, image: 'item_02.jpg' },
+        { id: 1, name: '商品タイトル①', price: 1580, image: 'item_01.jpg' },
+        { id: 3, name: '商品タイトル③', price: 600, image: 'item_03.jpg' },
+        { id: 4, name: '商品タイトル④', price: 400, image: 'item_04.jpg' },
+        { id: 6, name: '商品タイトル⑥', price: 1000, image: 'item_06.jpg' },
+        { id: 5, name: '商品タイトル⑤', price: 1100, image: 'item_05.jpg' },
+        { id: 7, name: '商品タイトル⑦', price: 900, image: 'item_07.jpg' },
+        { id: 9, name: '商品タイトル⑨', price: 850, image: 'item_09.jpg' },
+        { id: 8, name: '商品タイトル⑧', price: 980, image: 'item_08.jpg' },
+        { id: 11, name: '商品タイトル⑪', price: 750, image: 'item_11.jpg' },
+        { id: 10, name: '商品タイトル⑩', price: 700, image: 'item_10.jpg' },
+        { id: 12, name: '商品タイトル⑫', price: 800, image: 'item_12.jpg' }
       ]
     }
   }
