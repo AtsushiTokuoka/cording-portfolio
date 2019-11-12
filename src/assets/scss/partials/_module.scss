@@ -114,6 +114,10 @@
       @include media-breakpoint-up(md) {
         width: 48%;
       }
+      .active {
+        border: 2px solid $gray01;
+        padding: 3px;
+      }
     }
   }
 }
