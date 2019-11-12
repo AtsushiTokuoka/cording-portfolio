@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 export default {
   name: 'product-list',
   computed: {
@@ -67,14 +66,8 @@ export default {
     return {
       sortOrder: 1,
       // 商品リスト
-      products: []
+      products: require('../assets/product-data.json')
     }
-  },
-  mounted: function() {
-    // 商品情報を取得
-    axios.get('/assets/product-data.json').then(response => {
-      this.products = response.data
-    })
   }
 }
 </script>
