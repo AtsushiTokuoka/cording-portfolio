@@ -1,7 +1,7 @@
 <template>
   <!--ITEMS-->
   <section>
-    <div class="m-sortbox mb-3 text-right">
+    <div class="m-sortbox mb-3">
       <label for="sort" class="ttl">並び替え：</label>
       <select id="sort" v-model.number="sortOrder" class="select-menu">
         <option value="1">標準（名前順）</option>

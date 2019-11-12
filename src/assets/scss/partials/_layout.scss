@@ -83,7 +83,10 @@
 }
 
 .l-wrapper {
-  padding-top: 100px;
+  padding-top: 70px;
+  @include media-breakpoint-up(md) {
+    padding-top: 90px;
+  }
 }
 
 .l-contents {
@@ -107,6 +110,8 @@
     font-weight: bold;
     color: $blue01;
     @include font-size(20);
+    line-height: 1;
+    margin-bottom: 10px;
   }
 }
 
