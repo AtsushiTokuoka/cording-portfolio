@@ -9,35 +9,8 @@
         <img v-bind:src="require('../assets/images/product/' + currentProduct.image)" alt="商品画像" />
       </div>
       <div class="sub-img">
-        <div class="thumbnail">
-          <img src="../assets/images/thumbnail/thumb02.jpg" alt="商品サムネイル" />
-        </div>
-        <div class="thumbnail">
-          <img src="../assets/images/thumbnail/thumb03.jpg" alt="商品サムネイル" />
-        </div>
-        <div class="thumbnail">
-          <img src="../assets/images/thumbnail/thumb04.jpg" alt="商品サムネイル" />
-        </div>
-        <div class="thumbnail">
-          <img src="../assets/images/thumbnail/thumb05.jpg" alt="商品サムネイル" />
-        </div>
-        <div class="thumbnail">
-          <img src="../assets/images/thumbnail/thumb01.jpg" alt="商品サムネイル" />
-        </div>
-        <div class="thumbnail">
-          <img src="../assets/images/thumbnail/gray.jpg" alt="商品サムネイル" />
-        </div>
-        <div class="thumbnail">
-          <img src="../assets/images/thumbnail/gray.jpg" alt="商品サムネイル" />
-        </div>
-        <div class="thumbnail">
-          <img src="../assets/images/thumbnail/gray.jpg" alt="商品サムネイル" />
-        </div>
-        <div class="thumbnail">
-          <img src="../assets/images/thumbnail/gray.jpg" alt="商品サムネイル" />
-        </div>
-        <div class="thumbnail">
-          <img src="../assets/images/thumbnail/gray.jpg" alt="商品サムネイル" />
+        <div class="thumbnail" v-for="image in currentProduct.thumbnail" v-bind:key="image">
+          <img v-bind:src="require('../assets/images/thumbnail/' + image)" alt="商品サムネイル" />
         </div>
       </div>
     </div>
@@ -66,11 +39,7 @@
     </form>
     <div class="m-description">
       <div class="title">商品説明</div>
-      <p class="body">
-        説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明
-        テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ
-        スト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
-      </p>
+      <p class="body">{{ currentProduct.description }}</p>
     </div>
   </section>
 </template>
