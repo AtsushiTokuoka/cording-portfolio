@@ -86,7 +86,7 @@ export default {
       products: require('../assets/product-data.json')
     }
   },
-  mounted: function() {
+  created: function() {
     // URLよりパラメータを取得。valueでtargetIdを初期化
     const params = location.search
       .substring(1, location.search.length)
