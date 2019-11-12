@@ -11,32 +11,32 @@
       <nav class="header-sp-navi js-menuToggle">
         <ul class="wrap">
           <li class="sp-navi-list">
-            <a href="#" class="sp-navi-link">NAVI①</a>
+            <a href="#" class="sp-navi-link">navi1</a>
           </li>
           <li class="sp-navi-list">
-            <a href="#" class="sp-navi-link">NAVI②</a>
+            <a href="#" class="sp-navi-link">navi2</a>
           </li>
           <li class="sp-navi-list">
-            <a href="#" class="sp-navi-link">NAVI③</a>
+            <a href="#" class="sp-navi-link">navi3</a>
           </li>
           <li class="sp-navi-list">
-            <a href="#" class="sp-navi-link">NAVI④</a>
+            <a href="#" class="sp-navi-link">navi4</a>
           </li>
         </ul>
       </nav>
       <nav class="header-pc-navi">
         <ul>
           <li class="pc-navi-list">
-            <a href="#">NAVI①</a>
+            <a href="#">navi1</a>
           </li>
           <li class="pc-navi-list">
-            <a href="#">NAVI②</a>
+            <a href="#">navi2</a>
           </li>
           <li class="pc-navi-list">
-            <a href="#">NAVI③</a>
+            <a href="#">navi3</a>
           </li>
           <li class="pc-navi-list">
-            <a href="#">NAVI④</a>
+            <a href="#">navi4</a>
           </li>
         </ul>
       </nav>
