@@ -1,6 +1,6 @@
 <template>
   <!--footer start-->
-  <footer class="l-footer mt-4">
+  <footer class="l-footer">
     <div class="inner container">
       <ul class="footer-list-wrap">
         <li class="footer-list">
