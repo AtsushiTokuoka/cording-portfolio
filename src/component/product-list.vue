@@ -10,7 +10,7 @@
       </select>
     </div>
     <div class="m-disp-item">
-      <div class="item-box" v-for="product in filteredList">
+      <div class="item-box" v-for="product in filteredList" v-bind:key="product.name">
         <div class="inner">
           <img
             class="thumbnail"
